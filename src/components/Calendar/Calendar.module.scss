@@ -1,0 +1,31 @@
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  align-items: stretch;
+}
+
+.calendarCurrentDateContainer {
+  display: flex;
+  gap: 12px;
+}
+
+.calendarDateTitle {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.calendarChangeBtn {
+  width: 40;
+  height: 40;
+  background-color: #ffffff;
+  border: none;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
